@@ -4,8 +4,10 @@ alert("Ну здарова уебан, " +
     "пока писал эту хуйню, ты поплатишься своими нервными клетками и гандон " +
     "ты вообще ебаный , я убил на это 6 часов времени . Ебаная ты тварь")
 
-let num = 0;localStorage.getItem("counter");
-function myFunction() {
+let num = 0;
+localStorage.getItem("counter");
+
+function handleIncrement() {
     document.getElementById("num").textContent = ++num;
     localStorage.setItem("counter", document.getElementById("num").textContent);
 
